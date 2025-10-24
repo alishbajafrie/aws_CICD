@@ -15,4 +15,4 @@ jobs:
 
       - name: Copy files to EC2
         run: |
-          scp -i "your-key.pem" -o StrictHostKeyChecking=no -r ./ ubuntu@52.91.184.202:/var/www/html/mywebsite/
+          scp -i "cicd.pem" -o StrictHostKeyChecking=no -r ./ ubuntu@52.91.184.202:/var/www/html/mywebsite/
